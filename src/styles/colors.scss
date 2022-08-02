@@ -1,3 +1,26 @@
 @charset "utf-8";
 
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
+
+$whistler-purple: #40227a;
+$whistler-blue: #026fb2;
+$whistler-green: #007f5f;
+
+$primary: $whistler-purple;
+$secondary: $whistler-blue;
+$tertiary: $whistler-green;
+
+$secondary-invert: findColorInvert($secondary);
+$tertiary-invert: findColorInvert($tertiary);
+
+$custom-colors: (
+  "secondary": (
+    $secondary,
+    $secondary-invert,
+  ),
+  "tertiary": (
+    $tertiary,
+    $tertiary-invert,
+  ),
+);
