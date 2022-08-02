@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "deque-systems.vscode-axe-linter",
+    "aaron-bond.better-comments",
+    "webben.browserslist",
+    "streetsidesoftware.code-spell-checker",
+    "firefox-devtools.vscode-firefox-debug",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "zignd.html-css-class-completion",
+    "orta.vscode-jest",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "esbenp.prettier-vscode",
+    "syler.sass-indented"
+  ]
+}
