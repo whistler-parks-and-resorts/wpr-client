@@ -3,6 +3,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "react-app",
+    "plugin:jsx-a11y/strict",
     "react-app/jest",
     "plugin:jest/recommended",
     "plugin:testing-library/react",
