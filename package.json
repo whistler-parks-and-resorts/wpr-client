@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@types/jest": "^27.5.2",
@@ -24,6 +25,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.3.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
   }
