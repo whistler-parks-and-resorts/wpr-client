@@ -7,3 +7,6 @@ export { default as Button } from "./elements/button/Button";
 export { default as InputField } from "./forms/input-field/InputField";
 export { default as InputControl } from "./forms/input-control/InputControl";
 export { default as SubmitButton } from "./forms/submit-button/SubmitButton";
+export { default as Label } from "./forms/label/Label";
+export { default as BaseTextInput } from "./forms/base-text-input/BaseTextInput";
+export { default as Form } from "./forms/form/Form";

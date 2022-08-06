@@ -31,7 +31,6 @@
         "case": "pascalCase",
         "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
       }
-    ],
-    "promise/prefer-await-to-then": [2]
+    ]
   }
 }
