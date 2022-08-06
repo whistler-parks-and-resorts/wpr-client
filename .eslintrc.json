@@ -5,11 +5,13 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:@typescript-eslint/strict",
     "plugin:unicorn/recommended",
+    "plugin:sonarjs/recommended",
     "plugin:promise/recommended",
     "react-app",
     "plugin:jsx-a11y/strict",
     "react-app/jest",
     "plugin:jest/recommended",
+    "plugin:jest-formatting/strict",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:prettier/recommended"
