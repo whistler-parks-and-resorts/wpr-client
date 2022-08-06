@@ -31,6 +31,12 @@
         "case": "pascalCase",
         "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
       }
+    ],
+    "unicorn/consistent-function-scoping": [
+      2,
+      {
+        "checkArrowFunctions": false
+      }
     ]
   }
 }

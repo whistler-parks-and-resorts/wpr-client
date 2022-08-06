@@ -2,11 +2,13 @@ import Box from "../../elements/box/Box";
 import RequiredChildren from "../../interfaces/RequiredChildren";
 import SubmitButton from "../submit-button/SubmitButton";
 
-const handleOnSubmit = (event: React.FormEvent): void => {
-  event.preventDefault();
-};
+const Form: React.FC<FormProperties> = ({ children, callback }: FormProperties) => {
+  const handleOnSubmit = (event: React.FormEvent): void => {
+    callback();
 
-const Form: React.FC<FormProperties> = ({ children, routeTo }: FormProperties) => {
+    event.preventDefault();
+  };
+
   return (
     <Box>
       <form onSubmit={handleOnSubmit}>
@@ -18,7 +20,7 @@ const Form: React.FC<FormProperties> = ({ children, routeTo }: FormProperties) =
 };
 
 interface FormProperties extends RequiredChildren {
-  routeTo: string;
+  callback: () => void;
 }
 
 export default Form;
