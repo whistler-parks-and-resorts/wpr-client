@@ -1,4 +1,3 @@
-import Columns from "./layout/columns/Columns";
-import Column from "./layout/column/Column";
+export { default as Columns } from "./layout/columns/Columns";
 
-export { Columns, Column };
+export { default as Column } from "./layout/column/Column";

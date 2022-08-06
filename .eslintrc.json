@@ -2,6 +2,10 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:unicorn/recommended",
+    "plugin:promise/recommended",
     "react-app",
     "plugin:jsx-a11y/strict",
     "react-app/jest",
@@ -9,5 +13,17 @@
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:prettier/recommended"
-  ]
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "unicorn/filename-case": [
+      2,
+      {
+        "case": "pascalCase",
+        "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
+      }
+    ]
+  }
 }
