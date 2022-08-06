@@ -7,8 +7,11 @@
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
     "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "react-app",
     "plugin:jsx-a11y/strict",
+    "plugin:compat/recommended",
     "react-app/jest",
     "plugin:jest/recommended",
     "plugin:jest-formatting/strict",
@@ -20,12 +23,14 @@
     "project": ["./tsconfig.json"]
   },
   "rules": {
+    "@typescript-eslint/array-type": [2, { "default": "generic" }],
     "unicorn/filename-case": [
       2,
       {
         "case": "pascalCase",
         "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
       }
-    ]
+    ],
+    "promise/prefer-await-to-then": [2]
   }
 }

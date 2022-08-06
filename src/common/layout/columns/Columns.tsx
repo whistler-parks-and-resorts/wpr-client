@@ -1,6 +1,6 @@
 import RequiredChildren from "../../interfaces/RequiredChildren";
 
-const Columns: React.FC<RequiredChildren> = ({ children }) => {
+const Columns: React.FC<RequiredChildren> = ({ children }: RequiredChildren) => {
   return <div className="columns">{children}</div>;
 };
 
