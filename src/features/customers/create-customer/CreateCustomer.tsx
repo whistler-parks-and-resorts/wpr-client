@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BaseTextInput, Form } from "../../../common";
-import useAuth from "../../../hooks/use-auth/UseAuth";
+import useAuth from "../../../hooks/useAuth/UseAuth";
 import { ValueDefaults } from "../../../utilities";
 import { customerRequest } from "./CreateCustomerRequest";
 
