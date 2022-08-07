@@ -1,10 +1,10 @@
 import { createContext } from "react";
-import { ApplicationActions } from "./ApplicationActions";
 import ApplicationState, { defaultApplicationState } from "./ApplicationState";
+import IAction from "./actions/IAction";
 
 export default interface ApplicationStore {
   state: ApplicationState;
-  dispatcher: (action: ApplicationActions) => void;
+  dispatcher: (action: IAction) => void;
 }
 
 export function defaultContext(): ApplicationStore {

@@ -4,7 +4,7 @@ import App from "./app/App";
 import "./styles/index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import createStore from "./hooks/useStore/CreateStore";
+import createStore from "./hooks/useStore/UseCreateStore";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(

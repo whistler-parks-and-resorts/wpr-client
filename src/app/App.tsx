@@ -4,7 +4,7 @@ import CreateCustomerContainer from "../features/customers/create-customer/Creat
 import applicationReducer from "../hooks/useStore/ApplicationReducer";
 import { defaultApplicationState } from "../hooks/useStore/ApplicationState";
 import { AppContext } from "../hooks/useStore/ApplicationStore";
-import useCreateStore from "../hooks/useStore/CreateStore";
+import useCreateStore from "../hooks/useStore/UseCreateStore";
 
 const App: React.FC = () => {
   const store = useCreateStore(defaultApplicationState(), applicationReducer);
