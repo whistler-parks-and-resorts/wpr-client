@@ -1,15 +1,20 @@
-import Footer from "../common/layout/footer/Footer";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import CreateCustomerContainer from "../features/customers/create-customer/CreateCustomerContainer";
+import applicationReducer from "../hooks/useStore/ApplicationReducer";
+import { defaultApplicationState } from "../hooks/useStore/ApplicationState";
+import { AppContext } from "../hooks/useStore/ApplicationStore";
+import useCreateStore from "../hooks/useStore/CreateStore";
 
 const App: React.FC = () => {
+  const store = useCreateStore(defaultApplicationState(), applicationReducer);
+
   return (
-    <>
-      <p className="has-text-primary has-text-weight-semibold">
-        Welcome to Whistler Parks & Resorts!
-      </p>
-      <CreateCustomerContainer />
-      <Footer />
-    </>
+    <AppContext.Provider value={store}>
+      <Routes>
+        <Route path={"/"} element={<CreateCustomerContainer />} />
+      </Routes>
+    </AppContext.Provider>
   );
 };
 

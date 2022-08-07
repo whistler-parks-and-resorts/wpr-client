@@ -1,9 +1,10 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./app/App";
 import "./styles/index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import createStore from "./hooks/useStore/CreateStore";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
